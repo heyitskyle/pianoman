@@ -38,11 +38,34 @@ body {
 
     /* Background */
     background-color: var(--color-background-base);
+    position: relative;
+    z-index: 1;
+    /* background-color: var(--color-background-base);
     background-image: url("../assets/navbar.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    background-attachment: fixed !important;
+    background-attachment: fixed; */
+}
+
+/* Background Image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../assets/navbar.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* For iOS compatibility */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Typography */
