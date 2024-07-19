@@ -1,3 +1,102 @@
+/* Global Styles */
+/* Playfair Display Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Colors */
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-orange: #FF9505;
+    --color-green: #4F9D69;
+    --color-text: #F6F3F1;
+    --color-text-med: #8F8F8E;
+    --color-text-dark: #323231;
+
+    --color-background-base: #F6F6F6;
+    --color-background-dark: #323231;
+    --color-background-base-80: rgba(246, 246, 246, 0.8);
+}
+
+/* Body */
+body {
+    /* Disable overscroll */
+    overscroll-behavior: none;
+
+    /* Font */
+    color: var(--color-text);
+    /* Sans-serif font */
+    font-family: -apple-system, BlinkMacSystemFont,
+    'helvetica neue', helvetica,
+    'avenir next', avenir,
+    arial,
+    ubuntu,
+    roboto, noto,
+    'segoe ui',
+    sans-serif;
+
+    /* Background */
+    background-color: var(--color-background-base);
+    background-image: url("../assets/navbar.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    color: var(--color-green)
+}
+
+.nav-link {
+    color: var(--color-green);
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-active {
+    color: var(--color-text-dark);
+    /* double underline */
+    text-decoration: underline 2px double;
+    text-underline-offset: 3px;
+}
+
+.nav-link:hover {
+    color: var(--color-text-dark);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
 .navbar {
-    padding-top: 16rem;
+    min-height: 32rem;
+}
+    /* on larger screens, navbar will be resized */
+@media (min-width: 768px) {
+    .navbar {
+        min-height: 36rem;
+    }
+}
+
+/* Animation */
+.--scale-up:hover {
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+.--scale-down:hover {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Page Layout */
+.container-body {
+    background-color: var(--color-background-base-80);
+    /* blur effect */
+    backdrop-filter: blur(10px);
 }
