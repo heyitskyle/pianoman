@@ -40,9 +40,9 @@ body {
     background-color: var(--color-background-base);
     background-image: url("../assets/navbar.jpg");
     background-size: cover;
-    background-position: bottom right;
+    background-position: right;
     background-repeat: no-repeat;
-    background-attachment: fixed;  
+    background-attachment: fixed !important;
 }
 
 /* Typography */
