@@ -103,7 +103,7 @@ h1 {
 .container-body {
     background-color: var(--color-background-glass-light);
     /* blur effect */
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     /* upper shadow */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
