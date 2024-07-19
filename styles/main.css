@@ -58,7 +58,7 @@ body::before {
     height: 100vh;
     z-index: -1;
     background-image: url("../assets/navbar.jpg");
-    background-position: bottom right;
+    background-position: center right;
     background-repeat: no-repeat;
     /* For iOS compatibility */
     -webkit-background-size: cover;
@@ -98,17 +98,20 @@ h1 {
 
 /* Navigation */
 .navbar {
-    min-height: 85vh;
+    min-height: 75vh;
     /* inner shadow */
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Adjustments for larger screens can also use viewport units or remain specific */
+
+/*
 @media (min-width: 768px) {
     .navbar {
-        min-height: 75vh; /* Adjust as needed for larger screens */
+        min-height: 75vh;
     }
 }
+*/
 
 /* Animation */
 .--scale-up:hover {
