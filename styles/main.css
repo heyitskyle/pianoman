@@ -40,7 +40,7 @@ body {
     background-color: var(--color-background-base);
     background-image: url("../assets/navbar.jpg");
     background-size: cover;
-    background-position: center right;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-attachment: fixed;  
 }
@@ -103,7 +103,7 @@ h1 {
 .container-body {
     background-color: var(--color-background-glass-light);
     /* blur effect */
-    /* backdrop-filter: blur(20px); */
+    backdrop-filter: blur(20px);
     /* upper shadow */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -111,8 +111,6 @@ h1 {
 .section-card {
     background-color: var(--color-background-glass-white);
     border-radius: 5px;
-    /* blur effect */
-    /* backdrop-filter: blur(60px); */
     box-shadow: 
         0 5px 10px rgba(0, 0, 0, 0.05);
 }
